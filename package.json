@@ -1,0 +1,24 @@
+{
+	"name": "eslint-documentation",
+	"version": "1.0.0",
+	"description": "Just a personal documentation of my ESLint learnings.",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/rhtsid18-dev/eslint-documentation.git"
+	},
+	"author": "Rohit Sidhwani",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/rhtsid18-dev/eslint-documentation/issues"
+	},
+	"homepage": "https://github.com/rhtsid18-dev/eslint-documentation#readme",
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^5.42.0",
+		"@typescript-eslint/parser": "^5.42.0",
+		"eslint": "^8.26.0"
+	}
+}
