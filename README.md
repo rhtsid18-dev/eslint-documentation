@@ -47,7 +47,35 @@ checkPositive(3);
     - <img src="images/eslint_init_screenshot_1.png" height="200" />
 - For the purpose of this document, I have chosen `To check syntax, find problems, and enforce code style`.
 - After that there will be some self explanatory questions that you can answer easily based on your project's requirements.
+- I prefer to use VSCode as my IDE for coding so on VSCode we should install the ESLint extension which would run the linter as we type our code.
+
+## ESLint configuration file: -
+
+- What is "extends" ?
+    - In extends we can add preset configurations which could be as follows: -
+        - eslint:recommended ( The standard rules recomended by eslint. )
+        - airbnb ( One of the most popular style guides used with eslint. )
+- What is "rules" ?
+    - In the rules array, you can specify the rules you want which will override the extends templates you have set.
+    - You can get a list of all the available eslint rules from [this](https://eslint.org/docs/latest/rules/) page in the eslint documentation.
+
+- What is Abstract Syntax Tree (AST) ?
+    - If you want to write your own custom rule which is not available in the default list of rules provided by ESLint, you need to understand some concepts.
+    - Abstract Syntax Tree (AST) is one of those concepts.
+    - Abstract Syntax Tree (AST) is the javascript object that describes the code.
+    - There will be a parser that converts the JS code that we are writing into "Abstract Syntax Tree (AST)"
+    - Following are some of the tools that use AST: -
+        - Webpack
+        - Linters
+        - Babel.js
+        - Minifiers
+        - Syntax Highlighters
+    - ESLint by default uses the ESPree javascript parser which converts the javascript code that we write in the project into "Abstract Syntax Tree" (AST).
+    - You can actually see your code getting converted into AST using a tool like [astexplorer.net](astexplorer.net)
 
 ### WHERE I AM AT IN THE TUTORIAL RIGHT NOW : -
 
-Completed the 2nd video in the playlist. Need to start from video 3 tomorrow.
+Completed the 6th video in the playlist. Need to start from video 11 tomorrow since I am not interested in writing my own custom rules in ES Lint.
+Note for tomorrow: -
+
+- I don't think I wan't to get into creating custom rules as its very specific usecase and I would be fine with just pre-existing rules or custom rules written by others.
