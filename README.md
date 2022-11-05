@@ -39,6 +39,7 @@ checkPositive(3);
 - A formatter will not help you in enforcing Code-Quality rules but only formatting rules.
 - And as per my current understanding, a Linter will not fully help you with formatting rules also.
 - [This](https://prettier.io/docs/en/comparison.html) link comparision between the two on Prettier's official documentation exlains this perfectly.
+- [This](https://dev.to/andrewbaisden/how-to-use-eslint-and-prettier-for-code-analysis-and-formatting-1b4g) is also a good article on setting them up both for the project and sheds more light on what is the difference between the 2.
 - The best way to integrate both rules I believe is that we integrate Prettier as an extends or plugin with ESLint and not install prettier separately.
 
 ## How to install and use ESLint in your Javascript project: -
