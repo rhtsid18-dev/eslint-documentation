@@ -32,6 +32,10 @@ checkPositive(3);
 - These ^ issues can automatically be handled by ESLint if it is confirgured to address these issues.
 - We can and should run ESLint as part of our CI ( Continous Integration ) Pipeline.
 
+## Why do we need VSCode extension for ESLint in addition to installing ESLint npm package in your dev dependencies ?
+
+- Its mainly to show you the ESLint results of your code in the file as you work so that you don’t need to use the ESLint CLI to see linting results.
+
 ## What is the difference between ESLint and Prettier ?
 
 - Eslint is a linter.
@@ -39,7 +43,7 @@ checkPositive(3);
 - A formatter will not help you in enforcing Code-Quality rules but only formatting rules.
 - And as per my current understanding, a Linter will not fully help you with formatting rules also.
 - [This](https://prettier.io/docs/en/comparison.html) link comparision between the two on Prettier's official documentation exlains this perfectly.
-- [This](https://dev.to/andrewbaisden/how-to-use-eslint-and-prettier-for-code-analysis-and-formatting-1b4g) is also a good article on setting them up both for the project and sheds more light on what is the difference between the 2.
+- <u>**[This](https://dev.to/andrewbaisden/how-to-use-eslint-and-prettier-for-code-analysis-and-formatting-1b4g) is a good article on setting them up both for the project and sheds more light on what is the difference between the 2.**</u>
 
 ## How to install and use ESLint in your Javascript project: -
 
