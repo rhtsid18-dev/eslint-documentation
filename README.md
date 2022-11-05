@@ -73,6 +73,28 @@ checkPositive(3);
     - ESLint by default uses the ESPree javascript parser which converts the javascript code that we write in the project into "Abstract Syntax Tree" (AST).
     - You can actually see your code getting converted into AST using a tool like [astexplorer.net](astexplorer.net)
 
+- What is an ESLint Config and ESLint Plugin and what is the difference between then. ?
+    - The rules that you configure in your eslintrc.json ( Config file ) are only usable in your own project/workspace.
+    - What if you want to use this same config in a different project/workspace
+    - Now you could copy the contents of your eslintrc file and paste it in the other projects eslintrc file.
+    - This is not the best way to go because what if in future you want to add a new rule to the config.
+    - In that case you would have to create that new rule in every other project where you are using this config.
+    - To overcome this issue, we can use sharing of ESLint config.
+    - There are two types of things you can share, one is an ESLint config and the other is an ESLint Plugin.
+    - Unlike the ESLint config which is a set of pre-existing ESLint rules, an ESLint plugin is a set of custom rules created by you.
+    - Similar to the packages on NPM ( Node Package Manager ), these ESLint configs and plugins can be shared by anyone and installed and used by anyone using NPM.
+    - ESLint config presets (For example AirBnB which is the most popularly used one) can be used in by putting them in the `extends` array in the eslintrc.json config file.
+    - ESLint Plugins contain custom rules and also can contain config settings but doesn't have to.
+    - ESLint Plugins can be added by putting them in the `plugins` array in the eslintrc.json config file.
+    - Once a plugin is added to the `plugins` array, the rules provided by that plugin can be added to the `rules` array.
+    - For example, after adding the react plugin like this `"plugins": ["react"]`, you can add react rules in this manner : `"rules": ["react/no-danger": "error"]`
+    - Following are the naming conventions for ESLint config files and ESLint plugin files: -
+        - eslint-config-*
+        - eslint-plugin-*
+    - Basically if you go to the npm website, and then in the search bar you type `eslint-config-`, you will get suggestions for multiple shared eslint-config presets. Same with `eslint-plugin-`, where you will get suggestions for multiple shared eslint-plugins.
+
+----------
+
 ### WHERE I AM AT IN THE TUTORIAL RIGHT NOW : -
 
 Completed the 6th video in the playlist. Need to start from video 11 tomorrow since I am not interested in writing my own custom rules in ES Lint.
