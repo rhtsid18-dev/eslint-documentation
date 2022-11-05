@@ -32,6 +32,15 @@ checkPositive(3);
 - These ^ issues can automatically be handled by ESLint if it is confirgured to address these issues.
 - We can and should run ESLint as part of our CI ( Continous Integration ) Pipeline.
 
+## What is the difference between ESLint and Prettier ?
+
+- Eslint is a linter.
+- Prettier is a formatter.
+- A formatter will not help you in enforcing Code-Quality rules but only formatting rules.
+- And as per my current understanding, a Linter will not fully help you with formatting rules also.
+- [This](https://prettier.io/docs/en/comparison.html) link comparision between the two on Prettier's official documentation exlains this perfectly.
+- The best way to integrate both rules I believe is that we integrate Prettier as an extends or plugin with ESLint and not install prettier separately.
+
 ## How to install and use ESLint in your Javascript project: -
 
 - Prerequisite : Node > V10
